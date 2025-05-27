@@ -1,0 +1,110 @@
+/* RTL Overrides */
+[dir="rtl"] .sidebar {
+    padding-right: 0 !important;
+}
+
+[dir="rtl"] .content-wrapper,
+[dir="rtl"] .main-footer,
+[dir="rtl"] .main-header {
+    margin-right: 250px !important;
+    margin-left: 0 !important;
+}
+
+[dir="rtl"] .navbar-nav {
+    padding-right: 0;
+}
+
+[dir="rtl"] .ml-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+[dir="rtl"] .mr-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+}
+
+[dir="rtl"] .float-sm-right {
+    float: left !important;
+}
+
+[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+    content: "\f104";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding: 0 0.5rem;
+}
+/* Add this to public/assets/css/admin.css */
+
+/* Make info boxes clickable */
+.info-box {
+    position: relative;
+    cursor: pointer;
+}
+
+.info-box-footer-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Improve button styles */
+.btn-app {
+    margin: 0 0 10px 0;
+    min-width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+/* Table improvements */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0,0,0,.03);
+}
+
+/* Card header improvements */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .btn-app {
+        min-width: 60px;
+        height: 60px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    .info-box {
+        margin-bottom: 15px;
+    }
+}
+
+/* Dark mode support */
+.dark-mode .card {
+    background-color: #343a40;
+    border-color: #454d55;
+}
+
+.dark-mode .table {
+    color: #f8f9fa;
+    background-color: #343a40;
+}
+
+.dark-mode .table th,
+.dark-mode .table td {
+    border-color: #454d55;
+}
+
+.dark-mode .table-hover tbody tr:hover {
+    background-color: rgba(255,255,255,.05);
+}
