@@ -46,16 +46,16 @@ services:
       - key: MAIL_FROM_NAME
         value: MyPortfolio
 
-      # Database Settings (Adjust according to your DB on Render)
+      # ✅ Database Settings (Railway MySQL)
       - key: DB_CONNECTION
         value: mysql
       - key: DB_HOST
-        value: your-db-host
+        value: nozomi.proxy.rlwy.net
       - key: DB_PORT
-        value: 3306
+        value: 26803
       - key: DB_DATABASE
-        value: myportfolio
+        value: railway
       - key: DB_USERNAME
-        value: your-db-user
+        value: root
       - key: DB_PASSWORD
-        value: your-db-password
+        value: vZloJLGRSclisPqzTgRSeWrWlyfyuuoH
